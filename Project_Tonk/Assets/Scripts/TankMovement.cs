@@ -40,8 +40,8 @@ public class TankMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        m_MovementInputValue = Input.GetAxis("Vertical1");
-        m_TurnInputValue = Input.GetAxis("Horizontal1");
+        m_MovementInputValue = Input.GetAxis(m_MovementAxisName);
+        m_TurnInputValue = Input.GetAxis(m_TurnAxisName);
     }
     
     private void FixedUpdate()
